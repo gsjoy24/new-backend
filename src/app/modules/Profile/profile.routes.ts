@@ -13,7 +13,7 @@ router.get('/', auth(UserRoles.SUPER_ADMIN, UserRoles.ADMIN), ProfileControllers
 
 router.put(
 	'/:id',
-	auth(UserRoles.SUPER_ADMIN, UserRoles.BRANCH_MANAGER, UserRoles.ADMIN),
+	// auth(UserRoles.SUPER_ADMIN, UserRoles.BRANCH_MANAGER, UserRoles.ADMIN),
 	validateRequest(ProfileValidation.updateProfileSchema),
 	ProfileControllers.updateProfile
 );
