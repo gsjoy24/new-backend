@@ -14,8 +14,5 @@ export default {
 	jwt_refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN as string,
 
 	super_admin_email: process.env.SUPER_ADMIN_EMAIL,
-	super_admin_password: process.env.SUPER_ADMIN_PASSWORD,
-
-	coupon_api: process.env.COUPON_API as string,
-	sms_api: process.env.SMS_API as string
+	super_admin_password: process.env.SUPER_ADMIN_PASSWORD
 };
